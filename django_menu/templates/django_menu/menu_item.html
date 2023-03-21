@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ item.id }}</title>
+</head>
+<body>
+    <b>{{ item }}</b>
+        {% if item.children.all %}
+            <ul>
+            {% for i in item.children.all %}
+                <li><a href="{{ i.url }}">{{ i }}</a></li>
+            {% endfor %}
+            </ul>
+
+        {% endif %}
+</body>
+</html>

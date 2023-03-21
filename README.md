@@ -1,6 +1,5 @@
 Я создал проект под названием djangoproject и создал приложение django_menu
-Создал 2 модели `MenuItem` и `Menu`
-  a) `MenuItem` это элементы списка `menu`. И имеет 3 поля `name, url, parent`
+Создал 2 модели `MenuItem` и `Menu`. `MenuItem` это элементы списка `menu`. `MenuItem` имеет 3 поля `name, url, parent`. `Menu` имеет 2 поля `name, items`
 <p>
 Я немного не понял насчет вложенности. Но сделал следующим образом. У меня есть модель `MenuItem` в котором элементы связанны между с собой отношениями в виде (parent and child). И еще к ниму создал модель Menu Для группировки MenuItem. На сайте отображается первый уровень вложенности То есть:
 `Menu > ItemMenu1 > ItemMenu1_element1`. Так же прежде чем создать элемент в Menu вам надо создать элемент в MenuItem.
@@ -26,4 +25,4 @@ python manage.py createsuperuser
 python manage.py runserver
 
 После создайте элементы в модели MenuItem
-И после этого можете создать элементы в Menu
+И после этого можете создать элементы в Menu.
